@@ -7,10 +7,10 @@
    - Change the connection string to your SQL Server
 
 2. **Create Database**
-   - Open a Terminal in the `ProductionScheduler.Services.csproj` file path
+   - Open a Terminal in the root of the project folder
    - Run the command:  
      ```sh
-     dotnet ef database update
+     dotnet ef database update --project .\ProductionScheduler.Services\ProductionScheduler.Services.csproj --startup-project .\ProductionScheduler.API\ProductionScheduler.API.csproj
      ```
      (This will create the database using migrations)
 
